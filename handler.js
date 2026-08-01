@@ -1,3 +1,4 @@
+const sumhandler=require('./sum');
 const requestHandler=(req,res)=>{
  console.log(req.url,req.method);
  if(req.url==='/'){
@@ -16,6 +17,8 @@ const requestHandler=(req,res)=>{
      </html>`);
      return res.end();
 
+ }else if(req.url==='/calculate' && req.method==='POST'){
+    return sumhandler.sumRequestHandler(req,res);
  }else{
     res.setHeader('Content-Type','text/html');
     res.write(`<html>
