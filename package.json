@@ -1,0 +1,20 @@
+{
+  "name": "npm_test",
+  "version": "1.0.0",
+  "description": "This project is being created to learn about npm.",
+  "homepage": "https://github.com/VSaurabh5/Node_jslearning#readme",
+  "bugs": {
+    "url": "https://github.com/VSaurabh5/Node_jslearning/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VSaurabh5/Node_jslearning.git"
+  },
+  "license": "ISC",
+  "author": "Saurabh Verma",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
