@@ -7,8 +7,8 @@ const hostRouter = express.Router();
 
 // Local Module
 const rootDir = require("../utils/pathUtil");
-
-const homescotrolller = require('../controllers/homes');
+const homecontroller=require("../controllers/homes");
+hostRouter.get("/add-home",homecontroller.getAddHome); 
 
 const registeredHomes = [];
 
