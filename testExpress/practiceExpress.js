@@ -1,6 +1,7 @@
 const express=require('express');
 const bodyParser=require('body-parser');
 const homerouter=require('./routes/homerouter');
+const userrouter=require('./routes/userrouter').;
 
 const contactrouter=require('./routes/contactrouter');  
 
@@ -10,6 +11,7 @@ app.set('views','views');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded());
 app.use(homerouter);
+app.use(userrouter);
 app.use(contactrouter);
 
 
