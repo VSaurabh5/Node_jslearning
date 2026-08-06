@@ -5,6 +5,7 @@ const homerouter=require('./routes/homerouter');
 const contactrouter=require('./routes/contactrouter');  
 
 const app=express();
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded());
 app.use(homerouter);
 app.use(contactrouter);
